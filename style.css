@@ -1,0 +1,19 @@
+p {
+	color: #f0897d;
+	font-size: 25px;
+}
+
+#lab_title {
+	color: #d48889;
+	font-size: 35px;
+}
+
+input {
+	color: #6f5278;
+	font-size: 20px;
+	background-color: #f09e91;
+}
+
+html {
+	background-color: #6f5278;
+}

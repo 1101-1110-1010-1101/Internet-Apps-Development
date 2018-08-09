@@ -1,10 +1,20 @@
-<title>Labwork #1</title>
-<form action="" method="post">
-	<p>x: <input type="select" name="x"/></p>
-	<p>y: <input type="text" name="y"/></p>
-	<p>r: <input type="select" name="r"/></p>
-	<p><input type="submit"></p>
-</form>
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="style.css"/>
+	<title>Labwork #1</title>
+</head>
+<body>
+	<div id='lab_title'>Labwork#1</div>
+	<form action="" method="post">
+		<p>x: <input type="select" name="x"/></p>
+		<p>y: <input type="text" name="y"/></p>
+		<p>r: <input type="select" name="r"/></p>
+		<p><input type="submit"></p>
+	</form>
+</body>
+</html>
+
 <?php
 $x = (float)$_POST['x'];
 $y = (float)$_POST['y'];

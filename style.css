@@ -8,6 +8,16 @@ p {
 	font-size: 35px;
 }
 
+#name {
+	color: #d48889;
+	font-size: 20px;
+}
+
+#res {
+	color: #d48889;
+	font-size: 25px;
+}
+
 input {
 	color: #6f5278;
 	font-size: 20px;

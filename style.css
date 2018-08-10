@@ -1,8 +1,3 @@
-p {
-	color: #f0897d;
-	font-size: 25px;
-}
-
 #lab_title {
 	color: #d48889;
 	font-size: 35px;
@@ -18,9 +13,20 @@ p {
 	font-size: 25px;
 }
 
+#mainForm {
+	color: #f0897d;
+	font-size: 25px;
+}
+
 input {
 	color: #6f5278;
-	font-size: 20px;
+	font-size: 25px;
+	background-color: #f09e91;
+}
+
+select {
+	color: #6f5278;
+	font-size: 25px;
 	background-color: #f09e91;
 }
 

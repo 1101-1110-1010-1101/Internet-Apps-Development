@@ -10,11 +10,29 @@
 		<h2 id='name'>Выполнил студент группы P3202<br>Саржевский Иван Анатольевич</h2>
 	</header>
 	
-	<form action="" method="post" name="myForm" onsubmit="return validateForm()">
-		<p>x: <input type="select" name="x"/></p>
-		<p>y: <input type="text" name="y"/></p>
-		<p>r: <input type="select" name="r"/></p>
-		<p><input type="submit"></p>
+	<form id='mainForm' action="" method="post" name="myForm">
+		x:
+		<select name='x'>
+			<option>-3</option>
+			<option>-2</option>
+			<option>-1</option>
+			<option>0</option>
+			<option>1</option>
+			<option>2</option>
+			<option>3</option>
+			<option>4</option>
+			<option>5</option>
+		</select>
+		<p>y: <input type="text" name="y" value="0"/></p>
+		r:
+		<select name='r'>
+			<option>1</option>
+			<option>1.5</option>
+			<option>2</option>
+			<option>2.5</option>
+			<option>3</option>
+		</select>
+		<p><input type="submit" onclick="validateForm()"></p>
 	</form>
 	<?php 
 	include 'check.php';

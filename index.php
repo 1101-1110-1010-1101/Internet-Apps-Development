@@ -10,7 +10,7 @@
 		<h2 id='name'>Выполнил студент группы P3202<br>Саржевский Иван Анатольевич</h2>
 	</header>
 	
-	<form action="" method="post">
+	<form action="" method="post" name="myForm" onsubmit="return validateForm()">
 		<p>x: <input type="select" name="x"/></p>
 		<p>y: <input type="text" name="y"/></p>
 		<p>r: <input type="select" name="r"/></p>
@@ -25,3 +25,14 @@
 	<div id='res'>Answer: <?php var_export(check_coord($x, $y, $r)) ?></div>
 </body>
 </html>
+<script type="text/javascript">
+	function validateForm() {
+    	var values = document.forms["myForm"];
+    	for(var key in Object.keys(values)){
+  			var value = values[key].value;
+  			if (isNaN(value))
+  				alert('\'' + value + '\' is not a number')
+		}
+		return false;
+	} 
+</script>

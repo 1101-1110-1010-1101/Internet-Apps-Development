@@ -1,35 +1,59 @@
 #lab_title {
-	color: #d48889;
+	float: left;
+	margin: 10px;
+	color: #787987;
 	font-size: 35px;
 }
 
 #name {
-	color: #d48889;
+	margin: 10px;
+	margin-top: 6px;
+	color: #787987;
 	font-size: 20px;
 }
 
 #res {
-	color: #d48889;
+	position: static;
+	margin-left: 10px;
+	margin-bottom: 10px; 
+	color: #485c6e;
 	font-size: 25px;
 }
 
 #mainForm {
-	color: #f0897d;
+	float: left;
+	margin-left: 10px;
+	color: #485c6e;
 	font-size: 25px;
 }
 
-input {
-	color: #6f5278;
-	font-size: 25px;
-	background-color: #f09e91;
+#image {
+	float: right;
+	margin-right: 50px;
+	width: 250px;
+	height: 250px;
 }
 
-select {
-	color: #6f5278;
+.option {
+	margin-left: 10px;
+	width: 50px;
+	color: #485c6e;
 	font-size: 25px;
-	background-color: #f09e91;
+	background-color: #c9beaa;
 }
 
 html {
-	background-color: #6f5278;
+	background: url("res/fon.png");
+	height: 140%;
+	background-size: contain;
+}
+
+#everything {
+	margin-top: 40px;
+	margin-left: auto;
+    margin-right: auto;
+	width: 700px;
+	border-style: solid;
+	border-radius: 25px;
+	background-color: rgba(255,221,172,0.4)
 }

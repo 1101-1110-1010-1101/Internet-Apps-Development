@@ -10,13 +10,13 @@ function check_coord($x, $y, $r)
 	} 
 	else if ($x < 0 && $y > 0){
 		return False;
-	} 
+	}
 	else if ($x < 0 && $y < 0){
 		if (-$x <= $r - 2*(-$y))
 			return True;
 		else return False;
 	}
-	else if ($x < $r && $y < $r){
+	else if ($x < $r && -$y < $r){
 		return True;
 	} 
 	else return False;

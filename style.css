@@ -1,59 +1,74 @@
-#lab_title {
-	float: left;
-	margin: 10px;
+header {
+	margin-left: 3%;
 	color: #787987;
-	font-size: 35px;
+	font: sans-serif;
 }
 
-#name {
-	margin: 10px;
-	margin-top: 6px;
-	color: #787987;
-	font-size: 20px;
+header > h1 {
+	float: left;
+	margin-right: 10%;
+	font-size: 32pt;
+}
+
+header > h2 {
+	font-size: 22.4pt;
 }
 
 #res {
-	position: static;
-	margin-left: 10px;
-	margin-bottom: 10px; 
+	margin-left: 25%;
+	margin-bottom: 1%; 
 	color: #485c6e;
-	font-size: 25px;
+	font-size: 28pt;
+	border-style: solid;
+	border-radius: 10px;
+	width: 50%;
+	background-color: rgba(255,221,172,0.7)
 }
 
 #mainForm {
+	margin-top: 6%;
+	margin-left: 6%;
 	float: left;
-	margin-left: 10px;
 	color: #485c6e;
-	font-size: 25px;
+	width: 50%;
+}
+
+#content {
+	font-size: 28pt;
 }
 
 #image {
+	margin-right: 4%;
 	float: right;
-	margin-right: 50px;
-	width: 250px;
-	height: 250px;
+	width: 40%;
+	height: 72%;
+}
+
+#ok {
+	margin-left: 41%;
 }
 
 .option {
-	margin-left: 10px;
-	width: 50px;
+	width: 20%;
+	font-size: 28pt;
 	color: #485c6e;
-	font-size: 25px;
 	background-color: #c9beaa;
 }
 
 html {
 	background: url("res/fon.png");
-	height: 140%;
-	background-size: contain;
+	background-size: cover;
+	height: 100%;
 }
 
-#everything {
-	margin-top: 40px;
+body {
+	margin-top: 10%;
 	margin-left: auto;
     margin-right: auto;
-	width: 700px;
+	width: 60%;
+	height: 60%;
+	color: #485c6e;
 	border-style: solid;
-	border-radius: 25px;
+	border-radius: 10%;
 	background-color: rgba(255,221,172,0.4)
 }

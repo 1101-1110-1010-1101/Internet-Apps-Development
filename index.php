@@ -1,17 +1,18 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="style.css"/>
 	<title>Labwork #1</title>
 </head>
 <body>
-<div id='everything'>
-	<header>
-		<h1 id='lab_title'>Labwork#1</h1>
+	<header class="head">
+		<h1>Labwork#1<sub>18215</sub></h1>
 		<h2 id='name'>Выполнил студент группы P3202<br>Саржевский Иван Анатольевич</h2>
 	</header>
 	<img src="res/variant.png" alt='Variant' id='image'>
 	<form id='mainForm' action="" method="post" name="myForm">
+		<div id='content'>
 		x:
 		<select name='x' class="option">
 			<option>-3</option>
@@ -39,11 +40,10 @@
 		$y = (float)$_POST['y'];
 		$r = (float)$_POST['r'];
 		?>
-		<p><input type="submit" onclick="validateForm()" class="option" value="Ok" name="button"></p>
+		<p><input type="submit" onclick="validateForm()" class="option" value="Ok" name="button" id='ok'></p>
 		<div id='res'>Answer: <?php var_export(check_coord($x, $y, $r)) ?></div>
+		</div>
 	</form>
-	
-</div>
 </body>
 </html>
 <script type="text/javascript">

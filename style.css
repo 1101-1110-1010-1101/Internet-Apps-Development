@@ -31,13 +31,10 @@ header > h2 {
 	float: left;
 	color: #485c6e;
 	width: 50%;
-}
-
-#content {
 	font-size: 28pt;
 }
 
-#image {
+img#image {
 	margin-right: 4%;
 	float: right;
 	width: 40%;

@@ -6,11 +6,12 @@
 		<title>Labwork #1</title>
 	</head>
 	<body>
-		<header>
+		<header id='lab_info' class="block">
 			<h1>Labwork#1<sub>18215</sub></h1>
 			<h2>Выполнил студент группы P3202<br>Саржевский Иван Анатольевич</h2>
 		</header>
-		<img src="res/variant.png" alt='Variant' id='image'>
+		<img src="res/variant.png" alt='Variant' id='image' class="block">
+		<div id='content' class="block">
 		<form id='mainForm' action="" method="post" name="myForm">
 			x:
 			<select name='x' class="option">
@@ -46,7 +47,6 @@
 			<p><input type="submit" onclick="validateForm()" class="option" value="Ok" name="button" id='ok'></p>
 		</form>
 		<table id='result'>
-			<caption>Results</caption>
 			<tr>
 				<th>X</th>
 				<th>Y</th>
@@ -64,7 +64,9 @@
 				<th><?php echo number_format($time, 10, ".", "") ?></th>
 			</tr>
 		</table>
+		</div>
 	</body>
+	<div id='copyright'>&copy; spirit_blood</div>
 </html>
 <script type="text/javascript">
 	function add_result_to_table() {

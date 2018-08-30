@@ -8,7 +8,7 @@ function check_coord($x, $y, $r)
 			return True;
 		else return False;
 	} 
-	else if ($x < 0 && $y > 0){
+	else if ($x < 0 && $y >= 0){
 		return False;
 	}
 	else if ($x < 0 && $y < 0){

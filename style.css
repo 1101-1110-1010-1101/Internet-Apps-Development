@@ -15,16 +15,17 @@ header > h2 {
 }
 
 table, tr, th {
-	font-size: 20pt;
+	font-size: 16pt;
 	color: #2f3e4b;
 	border: 4px solid #2f3e4b;
 	border-collapse: collapse;
 }
 
-#result {
+#res {
 	margin-left: auto;
 	margin-right: auto;
 	margin-bottom: 5%;
+	font-size: 13px;
 }
 
 #mainForm {
@@ -55,7 +56,7 @@ input#ok {
 }
 
 html {
-	background: url("res/fon.png");
+	background:  url("res/fon.png") no-repeat center center fixed;
 	background-size: cover;
 	height: 100%;
 }
@@ -69,6 +70,7 @@ body {
 }
 
 #formBox {
+	margin-top: 0%;
 	width: 55%;
 }
 
@@ -90,9 +92,39 @@ body {
 	display: flex;
 }
 
+#overlay {
+    position: fixed; /* Sit on top of the page content */
+    display: none; /* Hidden by default */
+    width: 100%; /* Full width (cover the whole page) */
+    height: 100%; /* Full height (cover the whole page) */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+    z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+    cursor: pointer; /* Add a pointer on hover */
+    background-image: url("res/sad.gif");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#overlay > h1 {
+	position: absolute;
+    top: 80%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+	font-size: 50pt;
+	color: white;
+}
+
 @media (max-width: 960px) {
 	#content {
 		flex-direction: column;
 		align-items: center;
+		font-size: 12px;
 	}
 }

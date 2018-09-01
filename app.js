@@ -1,9 +1,21 @@
+function on() {
+    document.getElementById("overlay").style.display = "block";
+}
+
+function off() {
+    document.getElementById("overlay").style.display = "none";
+}
+
 function validate() {
 	var values = document.forms["myForm"];
 	for(var key in Object.keys(values)){
 		if (values[key].type != 'submit') {
 			var value = values[key].value;
-			if (isNaN(value)) return false;
+			if (isNaN(value)) {
+				on();
+				setTimeout(off, 1400);
+				return false;
+			}
 		}
 	}
 	return true;	

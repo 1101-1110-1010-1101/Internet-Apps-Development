@@ -9,10 +9,10 @@
 	$time = microtime(true) - $start;
 ?>
 <tr>
-	<th><?= $x ?></th>
-	<th><?= $y ?></th>
-	<th><?= $r ?></th>
-	<th><?= $res ? 'inside' : 'outside' ?></th>
-	<th><?= $currentTime ?></th>
-	<th><?= number_format($time, 10, ".", "") ?></th>
+	<th><?php echo $x ?></th>
+	<th><?php echo $y ?></th>
+	<th><?php echo $r ?></th>
+	<th><?php echo $res ? 'inside' : 'outside' ?></th>
+	<th><?php echo $currentTime ?></th>
+	<th><?php echo number_format($time, 10, ".", "") ?></th>
 </tr>

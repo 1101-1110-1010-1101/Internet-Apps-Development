@@ -9,6 +9,9 @@
 	<script type="text/javascript" src="app.js"></script>
 </head>
 <body>
+	<div id='overlay'>
+		<h1>Wrong...</h1>
+	</div>
 	<header id='lab_info' class="block">
 		<h1>Labwork#1<sub>18215</sub></h1>
 		<h2>Выполнил студент группы P3202<br>Саржевский Иван Анатольевич</h2>
@@ -55,6 +58,3 @@
 </body>
 <div id='copyright'>&copy; spirit_blood</div>
 </html>
-<script type="text/javascript">
-
-</script>

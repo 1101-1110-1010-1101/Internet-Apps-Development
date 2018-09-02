@@ -16,6 +16,13 @@ function validate() {
 				setTimeout(off, 1400);
 				return false;
 			}
+			if (key = 'y') {
+				if (value < -3 || value > 3) {
+					on();
+					setTimeout(off, 1400);
+					return false;
+				}
+			}
 		}
 	}
 	return true;	

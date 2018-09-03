@@ -43,16 +43,12 @@
 				<p><input type="submit" class="option" value="Ok" name="button" id='ok'></p>
 			</form>
 			<table id='res'>
-				<tr>
-					<th>X</th>
-					<th>Y</th>
-					<th>R</th>
-					<th>Result</th>
-					<th>Time</th>
-					<th>Script time</th>
-				</tr>
 				<?php
-					
+					session_start();
+					if (!isset($_SESSION['history'])) {
+						$_SESSION['history'] = array();
+					}
+					include 'result_table.php';
 				?>
 			</table>
 		</div>

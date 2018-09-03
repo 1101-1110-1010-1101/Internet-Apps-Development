@@ -22,35 +22,36 @@ function off() {
 }
 
 function validate() {
-	var values = document.forms["myForm"];
-	for(var key in Object.keys(values)){
-		if (values[key].type != 'submit') {
-			var value = values[key].value;
-			if (isNaN(value)) {
-				on(key, value, 0);
+	var y = document.querySelector("input[name=y]").value.replace(/,/g, '.');
+	var x = document.querySelector("select[name=x]").value;
+	var r = document.querySelector("select[name=r]").value;
+	var values = [x, y, r];
+	for(var i = 0; i < 3; i++) {
+	var val = values[i];
+		if (isNaN(val)) {
+			on(i, val, 0);
+			setTimeout(off, 1400);
+			return false;
+		}
+		if (i == 1) {
+			if (val < -3 || val > 3) {
+				on('y', val, 1);
 				setTimeout(off, 1400);
 				return false;
 			}
-			if (key == 'y') {
-				if (value < -3 || value > 3) {
-					on('y', value, 1);
-					setTimeout(off, 1400);
-					return false;
-				}
+		}
+		if (i == 0) {
+			if (![-3, -2, -1, 0, 1, 2, 3, 4, 5].includes(parseInt(val, 10))) {
+				on('x', val, 1);
+				setTimeout(off, 1400);
+				return false;
 			}
-			if (key == 'x') {
-				if (![-3, -2, -1, 0, 1, 2, 3, 4, 5].includes(parseInt(value, 10))) {
-					on('x', value, 1);
-					setTimeout(off, 1400);
-					return false;
-				}
-			}
-			if (key == 'r') {
-				if (![1, 1.5, 2, 2.5, 3].includes(parseFloat(value, 10))) {
-					on('r', parseFloat(value, 10), 1);
-					setTimeout(off, 1400);
-					return false;
-				}
+		}
+		if (i == 2) {
+			if (![1, 1.5, 2, 2.5, 3].includes(parseFloat(val, 10))) {
+				on('r', parseFloat(val, 10), 1);
+				setTimeout(off, 1400);
+				return false;
 			}
 		}
 	}
@@ -66,7 +67,7 @@ function submit(e) {
     		body: formData
   		})
   		.then(response => response.text())
-  		.then(htmlTable => document.querySelector('#res').insertAdjacentHTML('beforeend', htmlTable));
+  		.then(htmlTable => document.querySelector('#res').innerHTML = htmlTable);
 	}
 	return false;
 }

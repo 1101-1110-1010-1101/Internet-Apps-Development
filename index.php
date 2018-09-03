@@ -51,6 +51,9 @@
 					<th>Time</th>
 					<th>Script time</th>
 				</tr>
+				<?php
+					
+				?>
 			</table>
 		</div>
 		<img src="res/variant.png" alt='Variant' id='image' class="block">

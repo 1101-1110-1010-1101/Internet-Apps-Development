@@ -30,27 +30,27 @@ function validate() {
 	var val = values[i];
 		if (isNaN(val)) {
 			on(i, val, 0);
-			setTimeout(off, 1400);
+			setTimeout(off, 2400);
 			return false;
 		}
 		if (i == 1) {
 			if (val < -3 || val > 3) {
 				on('y', val, 1);
-				setTimeout(off, 1400);
+				setTimeout(off, 2400);
 				return false;
 			}
 		}
 		if (i == 0) {
 			if (![-3, -2, -1, 0, 1, 2, 3, 4, 5].includes(parseInt(val, 10))) {
 				on('x', val, 1);
-				setTimeout(off, 1400);
+				setTimeout(off, 2400);
 				return false;
 			}
 		}
 		if (i == 2) {
 			if (![1, 1.5, 2, 2.5, 3].includes(parseFloat(val, 10))) {
 				on('r', parseFloat(val, 10), 1);
-				setTimeout(off, 1400);
+				setTimeout(off, 2400);
 				return false;
 			}
 		}
